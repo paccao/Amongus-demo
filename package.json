@@ -5,7 +5,8 @@
 	"main": "index.ts",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
-		"format": "prettier --ignore-path .gitignore --write ."
+		"format": "prettier --ignore-path .gitignore --write .",
+		"dev": "hathora dev"
 	},
 	"keywords": [
 		"Amongus"
@@ -18,6 +19,9 @@
 		"trailingComma": "all",
 		"tabWidth": 4,
 		"useTabs": true
+	},
+	"dependencies": {
+		"hathora": "~0.7.6"
 	},
 	"devDependencies": {
 		"prettier": "^2.6.2"
