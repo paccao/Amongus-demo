@@ -1,23 +1,21 @@
-# hathora.yml
-
 types:
-	Location:
-		x: float
-		y: float
-	Player:
-		id: UserId
-		location: Location
-	GameState:
-		players: Player[]
+    Location:
+        x: float
+        y: float
+    Player:
+        id: UserId
+        location: Location
+    GameState:
+        players: Player[]
 
 methods:
-	joinGame:
+    joinGame:
 
-	moveTo:
-		location: Location
+    moveTo:
+        location: Location
 
 auth:
-	anonymous: {}
+    anonymous: {}
 
 userState: GameState
 
