@@ -1,21 +1,21 @@
 {
-  "name": "amongus-demo",
-  "version": "1.0.0",
-  "description": "A clone of Among us",
-  "main": "index.ts",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [
-    "Amongus"
-  ],
-  "author": "",
-  "license": "ISC",
-  "prettier": {
-    "semi": false,
-    "singleQuote": true,
-    "trailingComma": "all",
-    "tabWidth": 4,
-    "useTabs": true
-  }
+	"name": "amongus-demo",
+	"version": "1.0.0",
+	"description": "A clone of Among us",
+	"main": "index.ts",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [
+		"Amongus"
+	],
+	"author": "",
+	"license": "ISC",
+	"prettier": {
+		"semi": false,
+		"singleQuote": true,
+		"trailingComma": "all",
+		"tabWidth": 4,
+		"useTabs": true
+	}
 }
