@@ -1,0 +1,26 @@
+# hathora.yml
+
+types:
+	Location:
+		x: float
+		y: float
+	Player:
+		id: UserId
+		location: Location
+	GameState:
+		players: Player[]
+
+methods:
+	joinGame:
+
+	moveTo:
+		location: Location
+
+auth:
+	anonymous: {}
+
+userState: GameState
+
+error: string
+
+tick: 60

@@ -10,5 +10,12 @@
     "Amongus"
   ],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "all",
+    "tabWidth": 4,
+    "useTabs": true
+  }
 }
