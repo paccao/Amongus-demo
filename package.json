@@ -6,7 +6,7 @@
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"format": "prettier --ignore-path .gitignore --write .",
-		"dev": "hathora dev"
+		"dev": "COORDINATOR_HOST=localhost hathora dev"
 	},
 	"keywords": [
 		"Amongus"

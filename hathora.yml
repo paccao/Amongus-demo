@@ -21,4 +21,4 @@ userState: GameState
 
 error: string
 
-tick: 60
+tick: 50
