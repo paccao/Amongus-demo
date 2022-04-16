@@ -2,7 +2,7 @@
 	"name": "amongus-demo",
 	"version": "1.0.0",
 	"description": "A clone of Among us",
-	"main": "index.ts",
+	"main": "",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"format": "prettier --ignore-path .gitignore --write .",
@@ -21,7 +21,8 @@
 		"useTabs": true
 	},
 	"dependencies": {
-		"hathora": "~0.7.6"
+		"hathora": "~0.7.6",
+		"local-coordinator": "https://github.com/hathora/local-coordinator.git"
 	},
 	"devDependencies": {
 		"prettier": "^2.6.2"
