@@ -21,7 +21,7 @@
 		"useTabs": true
 	},
 	"dependencies": {
-		"hathora": "~0.7.6",
+		"hathora": "~0.7.7",
 		"local-coordinator": "https://github.com/hathora/local-coordinator.git"
 	},
 	"devDependencies": {
