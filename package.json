@@ -4,27 +4,28 @@
 	"description": "A clone of Among us",
 	"main": "",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
 		"format": "prettier --ignore-path .gitignore --write .",
-		"dev": "COORDINATOR_HOST=localhost hathora dev"
+		"dev": "COORDINATOR_HOST=localhost hathora dev",
+		"coordinator": "local-coordinator"
 	},
 	"keywords": [
 		"Amongus"
 	],
 	"author": "",
 	"license": "ISC",
+	"dependencies": {
+		"hathora": "~0.7.7",
+		"local-coordinator": "github:Greenheart/local-coordinator#feature/simplify-local-dev"
+	},
+	"devDependencies": {
+		"prettier": "^2.6.2",
+		"ts-node": "^10.7.0"
+	},
 	"prettier": {
 		"semi": false,
 		"singleQuote": true,
 		"trailingComma": "all",
 		"tabWidth": 4,
 		"useTabs": true
-	},
-	"dependencies": {
-		"hathora": "~0.7.7",
-		"local-coordinator": "https://github.com/hathora/local-coordinator.git"
-	},
-	"devDependencies": {
-		"prettier": "^2.6.2"
 	}
 }
