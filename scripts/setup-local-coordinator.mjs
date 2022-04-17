@@ -4,17 +4,20 @@ import { stat } from 'fs/promises'
 
 const fileExists = async (path) => Boolean(await stat(path).catch((e) => false))
 
-const ensureCertificatesExist = async (requiredCertificatePaths) => {
-	const result = await Promise.all(requiredCertificatePaths.map(fileExists))
+const ensureCertificatesExist = async (requiredFiles) => {
+	const results = await Promise.all(requiredFiles.map(fileExists))
+	const missingFiles = results.reduce(
+		(missing, res, i) => (res ? missing : [...missing, requiredFiles[i]]),
+		[],
+	)
 
-	if (result.some((r) => r === false)) {
+	if (missingFiles.length) {
+		console.error('[local-coordinator]: Missing files', missingFiles)
 		console.error(
-			'Error: Generate certificates for localhost and place them in the root of the project. More info: https://github.com/hathora/local-coordinator#readme',
+			'\n[local-coordinator]: Generate certificates for localhost and place them in the root of the project. More info: https://github.com/hathora/local-coordinator#readme',
 		)
 		process.exit(1)
 	}
 }
 
-await ensureCertificatesExist(['localhost.pem', 'localhost-key.pem'])
-
-// initiate the
+await ensureCertificatesExist(['./localhost.pem', './localhost-key.pem'])
